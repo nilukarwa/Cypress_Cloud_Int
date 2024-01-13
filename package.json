@@ -1,0 +1,25 @@
+{
+  "name": "cypress_auto",
+  "version": "1.0.0",
+  "description": "My Cypress Automation Project TDD, BDD-Cucumber, Hooks, Mocha, badeball-Cucumber-preprocessor",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run",
+    "headedTest": "npm run test -- --headed",
+    "chromeTest": "npm run test -- --browser chrome",
+    "recordDashboardTest": "npm run test -- --record --key 98049002-af3a-41ff-bffd-bac372451af3 --reporter mochawesome"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.6.2",
+    "mocha": "^10.2.0",
+    "multiple-cucumber-html-reporter": "^3.5.0"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.0.0",
+    "@cypress/browserify-preprocessor": "^3.0.2",
+    "cypress-iframe": "^1.0.1"
+  }
+}
